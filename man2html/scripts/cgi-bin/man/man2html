@@ -3,8 +3,13 @@
 # auxiliary text files in /home/httpd/cgi-aux/man
 # aeb@cwi.nl - 980109
 
-MAN2HTML="/usr/bin/man2html"
-MANX="/home/httpd/cgi-aux/man/man.aux"
+MAN2HTML="/home/haggaie/local/bin/man2html"
+MANX="/home/haggaie/stm_project_stuff/man2html/cgi-aux/man/man.aux"
+
+if [ ! -r $MANX ]; then
+    echo "Cannot read $MANX"
+    exit 1
+fi
 
 # Do we need lynxcgi URLs? For the moment our criterion is
 # 1) HTTP_USER_AGENT=Lynx*  and 2) HTTP_HOST is unset.

@@ -1,5 +1,5 @@
 #!/bin/sh
-MAN2HTML=/usr/bin/man2html
+MAN2HTML=/home/haggaie/local/bin/man2html
 MANSH=/home/httpd/cgi-aux/man/mansearchhelp.aux
 
 # Do we need lynxcgi URLs? For the moment our criterion is

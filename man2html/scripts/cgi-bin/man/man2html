@@ -4,7 +4,7 @@
 # aeb@cwi.nl - 980109
 
 MAN2HTML="/home/haggaie/local/bin/man2html"
-MANX="/home/haggaie/stm_project_stuff/man2html/cgi-aux/man/man.aux"
+MANX="/home/haggaie/stm_project_stuff/stm_project/man2html/cgi-aux/man/man.aux"
 
 if [ ! -r $MANX ]; then
 	"$MAN2HTML" -E "Cannot read $MANX"
